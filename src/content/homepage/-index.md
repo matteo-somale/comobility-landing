@@ -25,9 +25,9 @@ features:
       label: "Get Started Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Astro"
+  - title: "Gestione Cooperativa della Mobilità in Ambito Rurale"
     image: "/images/service-2.png"
-    content: "Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "CO-Mobility stands out for its advanced digital platform that enables the management of cooperative mobility. It allows users to easily book different transport services under a Mobility as a Service (MaaS) approach, integrating peer-to-peer carpooling, volunteer-run services, cooperatively managed on-demand transport, and local public services to meet the diverse needs of rural communities."
     bulletpoints:
       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
       - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
@@ -37,9 +37,9 @@ features:
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/astroplate"
 
-  - title: "The Top Reasons to Choose Astro for Your Next Project"
+  - title: "Esperienza, Sostenibilità e Collaborazione al Centro del Progetto"
     image: "/images/service-3.png"
-    content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "The added value of CO-Mobility lies in the synergy between public bodies, volunteer organizations, and private operators, with a strong focus on environmental and social sustainability. The platform improves access to mobility services and encourages active community involvement, showing how technology and collaboration can support more sustainable and inclusive mobility models."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."
       - "Intuitive syntax and support for popular frameworks make learning and using Astro a breeze."

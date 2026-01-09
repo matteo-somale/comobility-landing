@@ -1,28 +1,29 @@
 ---
 const banners = [
   {
-    img: '/images/banner1.jpg',
-    title: 'Seamless Mobility',
-    desc: 'Experience effortless travel across the city with our integrated mobility solutions.',
+    img: '/images/logo-mobilitysquare.svg',
+    title: 'MobilitySquare srl - Società Benefit',
+    desc: 'MobilitySquare is specialized in sustainable mobility planning and innovative solutions for rural mobility',
   },
   {
-    img: '/images/banner2.jpg',
-    title: 'Eco-Friendly Options',
-    desc: 'Choose from a range of sustainable transport modes for a greener tomorrow.',
+    img: '/images/logo-mobicoop.png',
+    title: 'Mobicoop',
+    desc: 'French Cooperative Specialized in Social Mobility',
   },
   {
-    img: '/images/banner3.jpg',
-    title: 'Smart Connectivity',
-    desc: 'Stay connected and informed with real-time updates and smart features.',
+    img: '/images/logo-inrete.png',
+    title: 'Inrete - Consorzio Socio Assistenziale',
+    desc: 'Social Assistance Public Body in the Area of Ivrea (TO)',
   },
 ];
 ---
 <section class="w-full py-12 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-center my-8">Partecipanti al progetto</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {banners.map(({ img, title, desc }) => (
-        <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col items-center text-center p-6 transition hover:shadow-lg">
-          <img src={img} alt={title} class="w-24 h-24 object-cover rounded-full mb-4 border-4 border-primary-500" loading="lazy" />
+        <div class="  overflow-hidden flex flex-col items-center text-center p-6 ">
+          <img src={img} alt={title} class="h-24 object-cover  mb-4" loading="lazy" />
           <h3 class="text-xl font-semibold text-primary-700 mb-2">{title}</h3>
           <p class="text-gray-600">{desc}</p>
         </div>

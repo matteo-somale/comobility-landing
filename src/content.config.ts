@@ -119,7 +119,7 @@ const ctaSectionCollection = defineCollection({
   }),
 });
 
-// Testimonials Section collection schema
+// participants collection schema
 const tbSectionCollection = defineCollection({
   loader: glob({
     pattern: "three-banners.{md,mdx}",
@@ -129,12 +129,11 @@ const tbSectionCollection = defineCollection({
     enable: z.boolean(),
     title: z.string(),
     description: z.string(),
-    testimonials: z.array(
+    banners: z.array(
       z.object({
-        name: z.string(),
-        avatar: z.string(),
-        designation: z.string(),
-        content: z.string(),
+        img: z.string(),
+        title: z.string(),
+        desc: z.string(),
       }),
     ),
   }),
