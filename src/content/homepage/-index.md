@@ -1,9 +1,9 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Astro Project"
-  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
-  image: "/images/banner.png"
+  title: "Cooperative Sustainable<br>Mobility Solutions"
+  content: "CoMobility promotes multimodal sustainable transport in rural areas through an easy-to-use platform. Book carpooling, volunteer-run, on-demand cooperative, and public transport services seamlessly. Join us in advancing zero-emission mobility for a greener future."
+  image: "/images/comobility-purple-long.svg"
   button:
     enable: true
     label: "Get Started For Free"
@@ -11,16 +11,15 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Astroplate"
+  - title: "Servizi di Mobilità<br>Cooperativa Sostenibile"
     image: "/images/service-1.png"
-    content: "Astroplate is a comprehensive starter template that includes everything you need to get started with your Astro project. What's Included in Astroplate"
+    content: "Semplifica i tuoi spostamenti nel contesto rurale grazie a una piattaforma digitale unica che ti permette di pianificare, prenotare e pagare diverse modalità di trasporto cooperativo, e di condividere viaggi con altri utenti in modo semplice e conveniente."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Astro and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Pianifica e prenota **viaggi in pochi click**"
+      - "**Condividi** facilmente viaggi con altri utenti"
+      - "Accesso a più modalità di trasporto nel territorio rurale"
+      - "Organizza viaggi **regolari o occasionali**"
+      - "Connessione diretta con la comunità locale"
     button:
       enable: false
       label: "Get Started Now"

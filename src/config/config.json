@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "logo": "/images/comobility-purple-long.svg",
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "30",
@@ -13,10 +13,10 @@
   },
 
   "settings": {
-    "search": true,
+    "search": false,
     "sticky_header": true,
-    "theme_switcher": true,
-    "default_theme": "system",
+    "theme_switcher": false,
+    "default_theme": "default_theme",
     "pagination": 2,
     "summary_length": 200,
     "blog_folder": "blog"
