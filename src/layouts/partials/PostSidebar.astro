@@ -9,25 +9,7 @@ const { tags, categories, allCategories } = Astro.props;
   <div class="mb-8">
     <h5 class="mb-6">Categories</h5>
     <div class="rounded bg-light p-8 dark:bg-darkmode-light">
-      <ul class="space-y-4">
-        {
-          categories.map((category: any) => {
-            const count = allCategories.filter(
-              (c: any) => c === category
-            ).length;
-            return (
-              <li>
-                <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href={`/categories/${category}`}
-                >
-                  {humanize(category)} <span>({count})</span>
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
+      
     </div>
   </div>
   <!-- tags -->
