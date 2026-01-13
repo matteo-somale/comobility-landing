@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "Servizi di Mobilità<br>Cooperativa Sostenibile"
-    image: "/images/service-1.png"
+    image: "/images/piattaforma-blob.png"
     content: "Semplifica i tuoi spostamenti nel contesto rurale grazie a una piattaforma digitale unica che ti permette di pianificare, prenotare e pagare diverse modalità di trasporto cooperativo, e di condividere viaggi con altri utenti in modo semplice e conveniente."
     bulletpoints:
       - "Pianifica e prenota **viaggi in pochi click**"
@@ -26,7 +26,7 @@ features:
       link: "#"
 
   - title: "Gestione Cooperativa della Mobilità in Ambito Rurale"
-    image: "/images/service-2.png"
+    image: "/images/autista-blob.png"
     content: "CO-Mobility stands out for its advanced digital platform that enables the management of cooperative mobility. It allows users to easily book different transport services under a Mobility as a Service (MaaS) approach, integrating peer-to-peer carpooling, volunteer-run services, cooperatively managed on-demand transport, and local public services to meet the diverse needs of rural communities."
     bulletpoints:
       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
@@ -38,7 +38,7 @@ features:
       link: "https://github.com/zeon-studio/astroplate"
 
   - title: "Esperienza, Sostenibilità e Collaborazione al Centro del Progetto"
-    image: "/images/service-3.png"
+    image: "/images/rurale-blob.png"
     content: "The added value of CO-Mobility lies in the synergy between public bodies, volunteer organizations, and private operators, with a strong focus on environmental and social sustainability. The platform improves access to mobility services and encourages active community involvement, showing how technology and collaboration can support more sustainable and inclusive mobility models."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."
