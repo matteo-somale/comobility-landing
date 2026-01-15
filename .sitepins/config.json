@@ -10,8 +10,9 @@
     "root": "src/layouts"
   },
   "themeConfig": [
-    "src/config"
+    "src/config",
+    "src/i18n"
   ],
   "arrangement": [],
-  "showCommitModal": true
+  "showCommitModal": false
 }

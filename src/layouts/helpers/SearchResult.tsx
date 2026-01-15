@@ -1,7 +1,9 @@
+import { slugSelector } from "@/lib/utils/languageParser";
 import { plainify, titleify } from "@/lib/utils/textConverter";
 import React from "react";
 
 export interface ISearchItem {
+  lang: string;
   group: string;
   slug: string;
   frontmatter: {
@@ -33,10 +35,13 @@ export interface ISearchGroup {
 const SearchResult = ({
   searchResult,
   searchString,
+  lang
 }: {
   searchResult: ISearchItem[];
   searchString: string;
+  lang: string;
 }) => {
+
   // generate search result group
   const generateSearchGroup = (searchResult: ISearchItem[]) => {
     const joinDataByGroup: ISearchGroup[] = searchResult.reduce(
@@ -82,6 +87,7 @@ const SearchResult = ({
       ),
     );
   };
+
 
   // match underline
   const matchUnderline = (text: string, substring: string) => {
@@ -148,12 +154,14 @@ const SearchResult = ({
                         <img
                           src={item.frontmatter.image}
                           alt={item.frontmatter.title}
+                          width={100}
+                          height={100}
                         />
                       </div>
                     )}
                     <div className="search-result-item-body">
                       <a
-                        href={`/${item.slug}`}
+                        href={`${slugSelector(item.slug, lang)}`}
                         className="search-result-item-title search-result-item-link"
                       >
                         {matchUnderline(item.frontmatter.title, searchString)}
@@ -182,7 +190,17 @@ const SearchResult = ({
                             >
                               <path d="M11 0H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2 2 2 0 0 0 2-2V4a2 2 0 0 0-2-2 2 2 0 0 0-2-2zm2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1V3zM2 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2z"></path>
                             </svg>
-                            
+                            {item.frontmatter.categories.map(
+                              (category, index) => (
+                                <span key={category}>
+                                  {matchUnderline(category, searchString)}
+                                  {item.frontmatter.categories &&
+                                    index !==
+                                    item.frontmatter.categories.length -
+                                    1 && <>, </>}
+                                </span>
+                              ),
+                            )}
                           </div>
                         )}
                         {item.frontmatter.tags && (
@@ -201,7 +219,7 @@ const SearchResult = ({
                                 {matchUnderline(tag, searchString)}
                                 {item.frontmatter.tags &&
                                   index !==
-                                    item.frontmatter.tags.length - 1 && <>, </>}
+                                  item.frontmatter.tags.length - 1 && <>, </>}
                               </span>
                             ))}
                           </div>
