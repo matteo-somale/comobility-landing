@@ -26,7 +26,7 @@ const postIndex: any = await getListPage(
 if (postIndex[0].data.draft) {
   return Astro.redirect("/404");
 }
-const posts = await getSinglePage(BLOG_FOLDER, lang as keyof ContentEntryMap);
+const posts = await getSinglePage(BLOG_FOLDER, lang as keyof ContentEntryMap, "posts");
 const allCategories = await getAllTaxonomy(
   lang as keyof ContentEntryMap,
   "categories"

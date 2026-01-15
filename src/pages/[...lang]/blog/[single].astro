@@ -12,18 +12,23 @@ export async function getStaticPaths() {
     supportedLang.map(async (lang) => {
       const posts = await getSinglePage(
         BLOG_FOLDER,
-        lang as keyof ContentEntryMap
+        lang as keyof ContentEntryMap,
+        "posts"
       );
 
-      return posts.map((post) => ({
-        params: {
-          lang: lang || undefined,
-          single: post.id.split("/").pop(),
-        },
-        props: {
-          post,
-        },
-      }));
+      return posts.map((post) => {
+        // Extract the filename without extension as the slug
+        const slug = post.id.split("/").pop()?.replace(/\.md$/, "") || "";
+        return {
+          params: {
+            lang: lang || undefined,
+            single: slug,
+          },
+          props: {
+            post,
+          },
+        };
+      });
     })
   );
   return paths.flat();

@@ -19,27 +19,26 @@ const { title, image, date, author, categories } = data.data;
 const lang = getLangFromUrl(Astro.url);
 const { read_more } = await getTranslations(lang as keyof ContentEntryMap);
 
-const slugParts = data.id.split("/");
-slugParts[0] = "blog";
-const modifiedSlug = slugParts.join("/");
-data.id = modifiedSlug;
+// Extract just the filename for the blog post URL
+const postSlug = data.id.split("/").pop()?.replace(/\.md$/, "") || "";
+const blogUrl = `/blog/${postSlug}`;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
   {
     image && (
       <ImageMod
-        class="mb-6 w-full rounded"
+        class="mb-6 w-full rounded h-56 object-cover"
         src={image}
         alt={title}
         width={445}
-        height={230}
+        height={192}
         format="webp"
       />
     )
   }
   <h4 class="mb-3">
-    <a href={slugSelector(`/${data.id}`, lang)}>
+    <a href={slugSelector(blogUrl, lang)}>
       {title}
     </a>
   </h4>
@@ -67,7 +66,7 @@ data.id = modifiedSlug;
   <p class="mb-6">{plainify(data.body?.slice(0, Number(summary_length)))}</p>
   <a
     class="btn btn-outline-primary btn-sm"
-    href={slugSelector(`/${data.id}`, lang)}
+    href={slugSelector(blogUrl, lang)}
   >
     {read_more}
   </a>
