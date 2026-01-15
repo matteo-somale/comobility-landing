@@ -94,7 +94,7 @@ export default defineConfig({
       {
         name: "post_fr",
         label: "Posts (Français)",
-        path: "src/content/blog/french",
+        path: "src/content/blog/french/posts",
         fields: [
           {
             type: "string",
@@ -156,7 +156,7 @@ export default defineConfig({
       {
         name: "post_it",
         label: "Posts (Italiano)",
-        path: "src/content/blog/italian",
+        path: "src/content/blog/italian/posts",
         fields: [
           {
             type: "string",

@@ -27,8 +27,8 @@ export default defineConfig({
   trailingSlash: config.site.trailing_slash ? "always" : "ignore",
   vite: { plugins: [tailwindcss()] },
   i18n: { 
-    locales: ["en", "fr", "it"], 
-    defaultLocale: "en" 
+    locales: filteredSupportedLang, 
+    defaultLocale: default_language 
   },
   image: { service: sharp() },
   integrations: [

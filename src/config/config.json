@@ -4,7 +4,7 @@
     "base_url": "https://astroplate.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/comobility-purple-short.svg",
     "logo": "/images/comobility-purple-long.svg",
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
@@ -13,9 +13,9 @@
   },
 
   "settings": {
-    "search": true,
+    "search": false,
     "sticky_header": true,
-    "theme_switcher": true,
+    "theme_switcher": false,
     "default_theme": "system",
     "pagination": 2,
     "summary_length": 200,
