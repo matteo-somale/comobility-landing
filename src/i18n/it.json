@@ -1,0 +1,17 @@
+{
+  "full_name": "Nome Completo",
+  "full_name_placeholder": "Inserisci il tuo nome completo",
+  "mail_placeholder": "mario.rossi@email.com",
+  "message": "Altro da aggiungere?",
+  "message_placeholder": "Il tuo messaggio qui...",
+  "submit": "Invia",
+  "read_more": "Leggi di Più",
+  "page_not_found": "Pagina Non Trovata",
+  "working_mail": "Email di Lavoro",
+  "anything_else": "Altro da aggiungere?",
+  "contact_message_placeholder": "Il tuo messaggio qui...",
+  "page_not_found_content": "La pagina che stai cercando potrebbe essere stata rimossa, rinominata o essere temporaneamente non disponibile.",
+  "back_to_home": "Torna alla Home",
+  "get_started": "Inizia",
+  "announcement": "<span class='text-center block'>♥️ Ti piace Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Per favore ⭐️ su Github</a></span>"
+}

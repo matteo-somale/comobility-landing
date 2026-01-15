@@ -10,5 +10,11 @@
     "languageCode": "fr",
     "contentDir": "french",
     "weight": 2
+  },
+  {
+    "languageName": "It",
+    "languageCode": "it",
+    "contentDir": "italian",
+    "weight": 3
   }
 ]

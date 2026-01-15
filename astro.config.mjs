@@ -26,7 +26,10 @@ export default defineConfig({
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "ignore",
   vite: { plugins: [tailwindcss()] },
-  i18n: { locales: filteredSupportedLang, defaultLocale: default_language },
+  i18n: { 
+    locales: ["en", "fr", "it"], 
+    defaultLocale: "en" 
+  },
   image: { service: sharp() },
   integrations: [
     react(),

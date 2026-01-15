@@ -1,0 +1,24 @@
+{
+  "main": [
+    { "name": "Home", "url": "/" },
+    { "name": "Chi Siamo", "url": "/about" },
+    { "name": "Elementi", "url": "/elements" },
+    {
+      "name": "Pagine",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        { "name": "Contatti", "url": "/contact" },
+        { "name": "Blog", "url": "/blog" },
+        { "name": "Autori", "url": "/authors" },
+        { "name": "Categorie", "url": "/categories" },
+        { "name": "Tag", "url": "/tags" },
+        { "name": "Pagina 404", "url": "/404" }
+      ]
+    }
+  ],
+  "footer": [
+    { "name": "Elementi", "url": "/elements" },
+    { "name": "Privacy Policy", "url": "/privacy-policy" }
+  ]
+}

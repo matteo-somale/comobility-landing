@@ -94,7 +94,7 @@ export default defineConfig({
       {
         name: "post_fr",
         label: "Posts (Français)",
-        path: "src/content/blog/french/posts",
+        path: "src/content/blog/french",
         fields: [
           {
             type: "string",
@@ -148,6 +148,68 @@ export default defineConfig({
             type: "rich-text",
             name: "body",
             label: "Contenu",
+            isBody: true,
+          },
+        ],
+      },
+      // Italian Blog Posts
+      {
+        name: "post_it",
+        label: "Posts (Italiano)",
+        path: "src/content/blog/italian",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Titolo",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Descrizione",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Data",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Immagine in evidenza",
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Autore",
+            options: ["Admin"], // Add more authors as needed
+          },
+          {
+            type: "string",
+            name: "categories",
+            label: "Categorie",
+            list: true,
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Tag",
+            list: true,
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Bozza",
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Contenuto",
             isBody: true,
           },
         ],
