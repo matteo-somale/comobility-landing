@@ -24,3 +24,6 @@ package-lock.json
 
 # ignore .astro directory
 .astro
+
+node_modules
+.env
