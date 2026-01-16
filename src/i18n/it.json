@@ -13,5 +13,6 @@
   "page_not_found_content": "La pagina che stai cercando potrebbe essere stata rimossa, rinominata o essere temporaneamente non disponibile.",
   "back_to_home": "Torna alla Home",
   "get_started": "Inizia",
+  "related_posts": "Post Correlati",
   "announcement": "<span class='text-center block'>♥️ Ti piace Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Per favore ⭐️ su Github</a></span>"
 }

@@ -15,7 +15,7 @@ const blogCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/blog" }),
   schema: z.object({
     ...commonFields,
-    author: z.string().default("Admin"),
+    author: z.string().default(""),
     categories: z.array(z.string()).default(["others"]),
     tags: z.array(z.string()).default(["others"]),
   }),
