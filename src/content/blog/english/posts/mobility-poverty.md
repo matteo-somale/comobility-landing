@@ -1,12 +1,18 @@
 ---
-title: "Mobility Poverty: When Movement Becomes a Privilege"
-meta_title: "Understanding Mobility Poverty in Contemporary Societies"
-description: "An exploration of mobility poverty, its social causes, and its impact on inclusion, with a focus on rural areas."
-date: 2026-01-16
-image: "/images/image-placeholder.png"
-categories: ["Mobility", "Social Inclusion"]
-author: ""
-tags: ["transport", "rural-areas"]
+meta_title: Understanding Mobility Poverty in Contemporary Societies
+title: 'Mobility Poverty: When Movement Becomes a Privilege'
+description: >-
+  An exploration of mobility poverty, its social causes, and its impact on
+  inclusion, with a focus on rural areas.
+date: 2026-01-16T00:00:00.000Z
+image: /images/mobility-poverty.jpg
+author: ''
+categories:
+  - Mobility
+  - Social Inclusion
+tags:
+  - transport
+  - rural-areas
 draft: false
 ---
 
@@ -26,8 +32,8 @@ Although mobility poverty has gained academic and political attention, it still 
 
 Mobility poverty is often confused with **transport poverty**, but the two are not the same.
 
-- **Transport poverty** refers to concrete issues such as lack of transport services, poor affordability, limited physical accessibility, and inadequate infrastructure.
-- **Mobility poverty**, instead, is a broader concept. It includes transport poverty but also encompasses social, cultural, and personal factors that limit people’s *capability* or *perceived possibility* to move.
+* **Transport poverty** refers to concrete issues such as lack of transport services, poor affordability, limited physical accessibility, and inadequate infrastructure.
+* **Mobility poverty**, instead, is a broader concept. It includes transport poverty but also encompasses social, cultural, and personal factors that limit people’s *capability* or *perceived possibility* to move.
 
 In other words, mobility poverty is not only about the absence of transport, but about reduced opportunities for movement overall.
 

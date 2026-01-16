@@ -1,12 +1,18 @@
 ---
-title: "Povertà di Mobilità: Quando Muoversi Diventa un Privilegio"
-meta_title: "Comprendere la Povertà di Mobilità nelle Società Contemporanee"
-description: "Un’analisi della povertà di mobilità, delle sue cause sociali e dei suoi effetti sull’inclusione, con un focus sulle aree rurali."
-date: 2026-01-16
-image: "/images/image-placeholder.png"
-categories: ["Mobilità", "Inclusione Sociale"]
-author: ""
-tags: ["trasporti", "aree-rurali"]
+meta_title: Comprendere la Povertà di Mobilità nelle Società Contemporanee
+title: 'Povertà di Mobilità: Quando Muoversi Diventa un Privilegio'
+description: >-
+  Un’analisi della povertà di mobilità, delle sue cause sociali e dei suoi
+  effetti sull’inclusione, con un focus sulle aree rurali.
+date: 2026-01-16T00:00:00.000Z
+image: /images/mobility-poverty.jpg
+author: ''
+categories:
+  - Mobilità
+  - Inclusione Sociale
+tags:
+  - trasporti
+  - aree-rurali
 draft: false
 ---
 
@@ -26,8 +32,8 @@ Nonostante una crescente attenzione accademica e politica, la povertà di mobili
 
 È fondamentale distinguere la povertà di mobilità dalla **povertà di trasporto**.
 
-- La povertà di trasporto riguarda la mancanza di mezzi, la loro scarsa accessibilità fisica ed economica e l’inadeguatezza dei servizi.
-- La povertà di mobilità è un concetto più ampio, che include anche la capacità e la percezione individuale di potersi muovere.
+* La povertà di trasporto riguarda la mancanza di mezzi, la loro scarsa accessibilità fisica ed economica e l’inadeguatezza dei servizi.
+* La povertà di mobilità è un concetto più ampio, che include anche la capacità e la percezione individuale di potersi muovere.
 
 Non si tratta solo di trasporti, ma di opportunità di vita.
 

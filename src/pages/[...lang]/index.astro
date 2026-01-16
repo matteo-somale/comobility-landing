@@ -27,13 +27,13 @@ const threebanner = allData.threebanner || allData.Threebanner || null;
 const testimonial = await getSinglePage(
   "testimonialSection",
   lang as keyof ContentEntryMap,
-  "testimonial"
+  "testimonial",
 );
 
 const call_to_action = await getSinglePage(
   "ctaSection",
   lang as keyof ContentEntryMap,
-  "call-to-action"
+  "call-to-action",
 );
 ---
 
@@ -42,20 +42,22 @@ const call_to_action = await getSinglePage(
   <section class="section pt-14">
     <div class="container">
       <div class="row justify-center">
-        <div class="lg:col-7 md:col-9 mb-12 mt-8 text-center flex flex-col items-center justify-center">
-          {
-          banner.image && (
-            <div class="col-12 flex justify-center my-8">
+        <div
+          class="lg:col-7 md:col-9 mb-12 mt-8 text-center flex flex-col items-center justify-center"
+        >
+            {
+            banner.image && (
+              <div class="col-12 flex justify-center my-8" data-aos="fade-up">
               <ImageMod
-          src="/images/comobility-purple-long.svg"
-          height={480}
-          width={600}
-          alt="banner"
-          format="webp"
+                src="/images/comobility-purple-long.svg"
+                height={480}
+                width={600}
+                alt="banner"
+                format="webp"
               />
-            </div>
-          )
-        }
+              </div>
+            )
+            }
           <h1
             set:html={markdownify(banner.title)}
             class="mb-4 text-h3 lg:text-h1"
@@ -76,7 +78,6 @@ const call_to_action = await getSinglePage(
             )
           }
         </div>
-        
       </div>
     </div>
   </section>
@@ -87,9 +88,9 @@ const call_to_action = await getSinglePage(
     features.map((feature: Feature, index: number) => (
       <section class={`section-sm ${index % 2 === 0 && "bg-gradient"}`}>
         <div class="container">
-          <div class="row items-center justify-between">
+          <div class="row items-center justify-between"  data-aos="fade-up">
             <div
-              class={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"}`}
+              class={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"}` }
             >
               <ImageMod
                 src={feature.image}
@@ -131,8 +132,15 @@ const call_to_action = await getSinglePage(
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             {threebanner.items.map(({ img, title, content }: any) => (
               <div class="overflow-hidden flex flex-col items-center text-center p-6">
-                <img src={img} alt={title} class="h-24 object-cover mb-4" loading="lazy" />
-                <h3 class="text-xl font-semibold text-primary-700 mb-2">{title}</h3>
+                <img
+                  src={img}
+                  alt={title}
+                  class="h-24 object-cover mb-4"
+                  loading="lazy"
+                />
+                <h3 class="text-xl font-semibold text-primary-700 mb-2">
+                  {title}
+                </h3>
                 <p set:html={markdownify(content)} class="text-gray-600" />
               </div>
             ))}
@@ -143,7 +151,7 @@ const call_to_action = await getSinglePage(
   }
   <!-- /ThreeBanners -->
   <!-- /Features -->
- 
+
   <!-- <Testimonial testimonial={testimonial[0]} />-->
   <!-- <CallToAction call_to_action={call_to_action[0]} />-->
 </Base>
