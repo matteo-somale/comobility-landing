@@ -1,12 +1,9 @@
 {
   "main": [
     { "name": "Accueil", "url": "/" },
-    { "name": "À propos", "url": "/about" },
-    { "name": "Blog", "url": "/blog" },
-    { "name": "Contact", "url": "/contact" }
+    { "name": "Blog", "url": "/blog" }
   ],
   "footer": [
-    { "name": "Éléments", "url": "/elements" },
     { "name": "Politique de confidentialité", "url": "/privacy-policy" }
   ]
 }

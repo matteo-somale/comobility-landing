@@ -3,12 +3,9 @@
 {
   "main": [
     { "name": "Home", "url": "/" },
-    { "name": "Chi siamo", "url": "/about" },
-    { "name": "Blog", "url": "/blog" },
-    { "name": "Contatti", "url": "/contact" }
+    { "name": "Blog", "url": "/blog" }
   ],
   "footer": [
-    { "name": "Elementi", "url": "/elements" },
     { "name": "Privacy Policy", "url": "/privacy-policy" }
   ]
 }
