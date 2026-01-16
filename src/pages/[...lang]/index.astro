@@ -45,19 +45,19 @@ const call_to_action = await getSinglePage(
         <div
           class="lg:col-7 md:col-9 mb-12 mt-8 text-center flex flex-col items-center justify-center"
         >
-            {
+          {
             banner.image && (
-              <div class="col-12 flex justify-center my-8" data-aos="fade-up">
-              <ImageMod
-                src="/images/comobility-purple-long.svg"
-                height={480}
-                width={600}
-                alt="banner"
-                format="webp"
-              />
+              <div class="col-12 flex justify-center my-8">
+                <ImageMod
+                  src="/images/comobility-purple-long.svg"
+                  height={480}
+                  width={600}
+                  alt="banner"
+                  format="webp"
+                />
               </div>
             )
-            }
+          }
           <h1
             set:html={markdownify(banner.title)}
             class="mb-4 text-h3 lg:text-h1"
@@ -88,9 +88,9 @@ const call_to_action = await getSinglePage(
     features.map((feature: Feature, index: number) => (
       <section class={`section-sm ${index % 2 === 0 && "bg-gradient"}`}>
         <div class="container">
-          <div class="row items-center justify-between"  data-aos="fade-up">
+          <div class="row items-center justify-between">
             <div
-              class={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"}` }
+              class={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"}`}
             >
               <ImageMod
                 src={feature.image}
