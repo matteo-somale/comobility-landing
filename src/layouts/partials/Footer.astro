@@ -1,5 +1,6 @@
 ---
 import Logo from "@/components/Logo.astro";
+import ImageMod from "@/components/ImageMod.astro";
 import Social from "@/components/Social.astro";
 import config from "@/config/config.json";
 import social from "@/config/social.json";
@@ -26,7 +27,8 @@ if (menu) {
         <Logo />
       </div>
       <div class="mb-8 text-center lg:col-6 lg:mb-0">
-        <ul>
+        <!-- rimando a page del sito -->
+        <!-- <ul>
           {
             footer.map((menu: any) => (
               <li class="m-3 inline-block">
@@ -34,18 +36,36 @@ if (menu) {
               </li>
             ))
           }
+        </ul> -->
+        <ul>
+          {
+            footer.map((menu: any) => (
+              <li class="m-3 inline-block">
+                <a href={menu.url} target="_blank">{menu.name}</a>
+              </li>
+            ))
+          }
         </ul>
       </div>
-      <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
+      <!-- <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
         <Social source={social.main} className="social-icons" />
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="border-t border-border py-7 dark:border-darkmode-border">
     <div
       class="container text-center text-text-light dark:text-darkmode-text-light"
     >
-      <p set:html={markdownify(config.params.copyright)} />
+      <div class="flex justify-center my-6">
+        <ImageMod
+          src="/images/interreg-logo-alcotra-ita-fra.png"
+          height={480}
+          width={400}
+          alt="banner"
+          format="webp"
+        />
+      </div>
+      <!-- <p set:html={markdownify(config.params.copyright)} /> -->
     </div>
   </div>
 </footer>

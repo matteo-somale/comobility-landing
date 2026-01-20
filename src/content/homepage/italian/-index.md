@@ -5,7 +5,7 @@ banner:
   content: "**CoMobility** promuove il **trasporto multimodale sostenibile** nelle **aree rurali** attraverso una piattaforma facile da usare. Prenota **carpooling**, **servizi cooperativi on-demand** gestiti da volontari e **trasporti pubblici** senza problemi. Unisciti a noi per promuovere la **mobilità a emissioni zero** per un futuro più verde."
   image: "/images/comobility-purple-long.svg"
   button:
-    enable: true
+    enable: false
     label: "Inizia Gratuitamente"
     link: "https://github.com/zeon-studio/astroplate"
 
@@ -32,7 +32,7 @@ features:
       - "Piattaforma digitale MaaS: gestione integrata e semplice di diversi servizi di mobilità cooperativa."
       - "Servizi flessibili per le aree rurali: integrazione di carpooling, volontariato, trasporto on-demand e servizi pubblici locali."
     button:
-      enable: true
+      enable: false
       label: "Inizia Ora"
       link: "https://github.com/zeon-studio/astroplate"
 
