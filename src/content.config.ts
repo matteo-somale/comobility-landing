@@ -93,16 +93,18 @@ const homepageCollection = defineCollection({
         }),
       }),
     ),
-    threebanner: z.object({
-      heading: z.string(),
-      items: z.array(
-        z.object({
-          img: z.string(),
-          title: z.string(),
-          content: z.string(),
-        })
-      )
-    }).optional(),
+    threebanner: z
+      .object({
+        heading: z.string(),
+        items: z.array(
+          z.object({
+            img: z.string(),
+            title: z.string(),
+            content: z.string(),
+          }),
+        ),
+      })
+      .optional(),
   }),
 });
 

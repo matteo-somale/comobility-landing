@@ -24,7 +24,7 @@ const postSlug = data.id.split("/").pop()?.replace(/\.md$/, "") || "";
 const blogUrl = `/blog/${postSlug}`;
 ---
 
-<div class="bg-body dark:bg-darkmode-body">
+<div class="bg-body">
   {
     image && (
       <ImageMod
@@ -64,10 +64,7 @@ const blogUrl = `/blog/${postSlug}`;
     {date && <li class="inline-block">{dateFormat(date)}</li>}
   </ul>
   <p class="mb-6">{plainify(data.body?.slice(0, Number(summary_length)))}</p>
-  <a
-    class="btn btn-outline-primary btn-sm"
-    href={slugSelector(blogUrl, lang)}
-  >
+  <a class="btn btn-outline-primary btn-sm" href={slugSelector(blogUrl, lang)}>
     {read_more}
   </a>
 </div>

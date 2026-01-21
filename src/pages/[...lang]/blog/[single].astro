@@ -13,7 +13,7 @@ export async function getStaticPaths() {
       const posts = await getSinglePage(
         BLOG_FOLDER,
         lang as keyof ContentEntryMap,
-        "posts"
+        "posts",
       );
 
       return posts.map((post) => {
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
           },
         };
       });
-    })
+    }),
   );
   return paths.flat();
 }

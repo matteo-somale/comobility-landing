@@ -1,12 +1,12 @@
 ---
 meta_title: Comprendre la Pauvreté de Mobilité dans les Sociétés Contemporaines
-title: 'La Pauvreté de Mobilité : Quand se Déplacer Devient un Privilège'
+title: "La Pauvreté de Mobilité : Quand se Déplacer Devient un Privilège"
 description: >-
   Une analyse de la pauvreté de mobilité, de ses causes sociales et de ses
   effets sur l’inclusion, avec un focus sur les zones rurales.
 date: 2026-01-16T00:00:00.000Z
 image: /images/mobility-poverty.jpg
-author: ''
+author: ""
 categories:
   - Mobilité
   - Inclusion Sociale
@@ -18,13 +18,13 @@ draft: false
 
 ### Qu’est-ce que la Pauvreté de Mobilité ?
 
-Dans les sociétés contemporaines, souvent qualifiées d’*hyper-mobiles*, la liberté de mouvement est considérée comme un droit fondamental. Pourtant, de nombreuses personnes restent exclues de la vie sociale, politique et économique en raison d’un accès insuffisant à la mobilité. Cette situation est appelée **pauvreté de mobilité**.
+Dans les sociétés contemporaines, souvent qualifiées d’_hyper-mobiles_, la liberté de mouvement est considérée comme un droit fondamental. Pourtant, de nombreuses personnes restent exclues de la vie sociale, politique et économique en raison d’un accès insuffisant à la mobilité. Cette situation est appelée **pauvreté de mobilité**.
 
 La pauvreté de mobilité apparaît lorsque l’accès aux ressources, aux services et aux réseaux sociaux est limité par une offre de mobilité inadéquate.
 
 ### De la “Mobilité pour Tous” à la Pauvreté de Mobilité
 
-L’objectif d’une *mobilité pour tous*, indépendante de la possession d’une voiture, est relativement récent. Aujourd’hui encore, ce droit n’est pas pleinement garanti.
+L’objectif d’une _mobilité pour tous_, indépendante de la possession d’une voiture, est relativement récent. Aujourd’hui encore, ce droit n’est pas pleinement garanti.
 
 Malgré une attention croissante, la pauvreté de mobilité manque de reconnaissance institutionnelle, rendant nécessaire une meilleure compréhension de ses enjeux.
 
@@ -32,8 +32,8 @@ Malgré une attention croissante, la pauvreté de mobilité manque de reconnaiss
 
 Il est essentiel de distinguer la pauvreté de mobilité de la **pauvreté de transport**.
 
-* La pauvreté de transport concerne l’absence ou l’inadéquation des services de transport.
-* La pauvreté de mobilité est plus large et inclut les capacités individuelles, sociales et culturelles à se déplacer.
+- La pauvreté de transport concerne l’absence ou l’inadéquation des services de transport.
+- La pauvreté de mobilité est plus large et inclut les capacités individuelles, sociales et culturelles à se déplacer.
 
 ### Une Inégalité Multidimensionnelle
 

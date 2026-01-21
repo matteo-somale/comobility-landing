@@ -22,15 +22,19 @@ Immaginiamo un futuro in cui la mobilità rurale sia:
 ## I Nostri Valori
 
 ### Sostenibilità Ambientale
+
 Promuoviamo soluzioni di trasporto che riducono l'impatto ambientale e supportano la transizione verso una mobilità a zero emissioni.
 
 ### Inclusione Sociale
+
 Garantiamo che tutti i membri della comunità, indipendentemente dall'età, dal reddito o dalle capacità, abbiano accesso a servizi di mobilità adeguati.
 
 ### Cooperazione
+
 Crediamo nel potere della collaborazione tra cittadini, organizzazioni e istituzioni per creare soluzioni di mobilità condivise ed efficaci.
 
 ### Innovazione Tecnologica
+
 Utilizziamo le più recenti tecnologie digitali per migliorare l'esperienza utente e ottimizzare i servizi di mobilità.
 
 ## Come Funziona

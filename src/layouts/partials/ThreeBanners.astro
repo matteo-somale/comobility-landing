@@ -1,33 +1,41 @@
 ---
 const banners = [
   {
-    img: '/images/logo-mobilitysquare.svg',
-    title: 'MobilitySquare srl - Società Benefit',
-    desc: 'MobilitySquare is specialized in sustainable mobility planning and innovative solutions for rural mobility',
+    img: "/images/logo-mobilitysquare.svg",
+    title: "MobilitySquare srl - Società Benefit",
+    desc: "MobilitySquare is specialized in sustainable mobility planning and innovative solutions for rural mobility",
   },
   {
-    img: '/images/logo-mobicoop.png',
-    title: 'Mobicoop',
-    desc: 'French Cooperative Specialized in Social Mobility',
+    img: "/images/logo-mobicoop.png",
+    title: "Mobicoop",
+    desc: "French Cooperative Specialized in Social Mobility",
   },
   {
-    img: '/images/logo-inrete.png',
-    title: 'Inrete - Consorzio Socio Assistenziale',
-    desc: 'Social Assistance Public Body in the Area of Ivrea (TO)',
+    img: "/images/logo-inrete.png",
+    title: "Inrete - Consorzio Socio Assistenziale",
+    desc: "Social Assistance Public Body in the Area of Ivrea (TO)",
   },
 ];
 ---
+
 <section class="w-full py-12 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-center my-8">Partecipanti al progetto</h3>
+    <h2 class="text-center my-8">Partecipanti al progetto</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {banners.map(({ img, title, desc }) => (
-        <div class="  overflow-hidden flex flex-col items-center text-center p-6 ">
-          <img src={img} alt={title} class="h-24 object-cover  mb-4" loading="lazy" />
-          <h3 class="text-xl font-semibold text-primary-700 mb-2">{title}</h3>
-          <p class="text-gray-600">{desc}</p>
-        </div>
-      ))}
+      {
+        banners.map(({ img, title, desc }) => (
+          <div class="  overflow-hidden flex flex-col items-center text-center p-6 ">
+            <img
+              src={img}
+              alt={title}
+              class="h-24 object-cover  mb-4"
+              loading="lazy"
+            />
+            <h3 class="text-xl font-semibold text-primary-700 mb-2">{title}</h3>
+            <p class="text-gray-600">{desc}</p>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

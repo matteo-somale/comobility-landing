@@ -59,5 +59,4 @@ threebanner:
     - img: "/images/logo-inrete.png"
       title: "Inrete - Consortium Socio-Assistanciel"
       content: "Organisme public d’assistance sociale dans la région d’Ivrea (TO)"
-
 ---

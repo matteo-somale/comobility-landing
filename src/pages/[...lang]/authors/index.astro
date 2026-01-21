@@ -18,17 +18,22 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const authorIndex = await getListPage(
   COLLECTION_FOLDER,
-  lang as keyof ContentEntryMap
+  lang as keyof ContentEntryMap,
 );
 
 // Defensive: check if authorIndex exists and has data
-if (!authorIndex || !authorIndex[0] || !authorIndex[0].data || authorIndex[0].data.draft) {
+if (
+  !authorIndex ||
+  !authorIndex[0] ||
+  !authorIndex[0].data ||
+  authorIndex[0].data.draft
+) {
   return Astro.redirect("/404");
 }
 
 const authors = await getSinglePage(
   COLLECTION_FOLDER,
-  lang as keyof ContentEntryMap
+  lang as keyof ContentEntryMap,
 );
 ---
 

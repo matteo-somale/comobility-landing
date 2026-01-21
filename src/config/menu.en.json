@@ -4,6 +4,9 @@
     { "name": "Blog", "url": "/blog" }
   ],
   "footer": [
-    { "name": "An Alcotra cooperation project", "url": "https://www.interreg-alcotra.eu/" }
+    {
+      "name": "An Alcotra cooperation project",
+      "url": "https://www.interreg-alcotra.eu/"
+    }
   ]
 }
