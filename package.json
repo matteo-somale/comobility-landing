@@ -1,8 +1,8 @@
 {
   "name": "astroplate-multilingual",
   "version": "5.11.0",
-  "description": "Astro and Tailwindcss Multilingual boilerplate",
-  "author": "zeon.studio",
+  "description": "An Alcotra Mobility Project",
+  "author": "mobilitysqaure.eu",
   "license": "MIT",
   "type": "module",
   "packageManager": "yarn@1.22.22",
