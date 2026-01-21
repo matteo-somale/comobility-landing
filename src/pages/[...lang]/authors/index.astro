@@ -20,9 +20,12 @@ const authorIndex = await getListPage(
   COLLECTION_FOLDER,
   lang as keyof ContentEntryMap
 );
-if (authorIndex[0].data.draft) {
+
+// Defensive: check if authorIndex exists and has data
+if (!authorIndex || !authorIndex[0] || !authorIndex[0].data || authorIndex[0].data.draft) {
   return Astro.redirect("/404");
 }
+
 const authors = await getSinglePage(
   COLLECTION_FOLDER,
   lang as keyof ContentEntryMap
@@ -35,11 +38,15 @@ const authors = await getSinglePage(
     <div class="container">
       <div class="row justify-center">
         {
-          authors.map((author) => (
-            <div class="mb-14 md:col-6 lg:col-4">
-              <AuthorCard data={author} />
-            </div>
-          ))
+          Array.isArray(authors) && authors.length > 0 ? (
+            authors.map((author) => (
+              <div class="mb-14 md:col-6 lg:col-4">
+                <AuthorCard data={author} />
+              </div>
+            ))
+          ) : (
+            <div>No authors found.</div>
+          )
         }
       </div>
     </div>
