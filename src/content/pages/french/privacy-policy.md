@@ -1,7 +1,7 @@
 ---
 title: "Confidentialité"
 meta_title: ""
-description: "this is meta description"
+description: "Comobility Project"
 image: ""
 draft: false
 ---

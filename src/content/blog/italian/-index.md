@@ -1,7 +1,7 @@
 ---
 title: "Articoli del blog"
 meta_title: ""
-description: "Questa è una meta description"
+description: "Blog posts"
 image: ""
 draft: false
 ---
