@@ -14,7 +14,8 @@
     "check": "astro check",
     "generate-json": "node scripts/jsonGenerator.js",
     "remove-darkmode": "node scripts/removeDarkmode.js && yarn format",
-    "remove-multilang": "node scripts/removeMultilang.js && yarn format"
+    "remove-multilang": "node scripts/removeMultilang.js && yarn format",
+    "deploy": "rsync -avhz --delete dist/* massimoi@vps6.impronta48.it:/var/www/vhosts/comobility.eu/"
   },
   "dependencies": {
     "@astrojs/check": "0.9.6",
