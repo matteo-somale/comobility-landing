@@ -1,11 +1,12 @@
-
-
 {
   "main": [
     { "name": "Home", "url": "/" },
     { "name": "Blog", "url": "/blog" }
   ],
   "footer": [
-    { "name": "Un progetto di cooperazione Alcotra", "url": "https://www.interreg-alcotra.eu/" }
+    {
+      "name": "Un progetto di cooperazione Alcotra",
+      "url": "https://www.interreg-alcotra.eu/"
+    }
   ]
 }

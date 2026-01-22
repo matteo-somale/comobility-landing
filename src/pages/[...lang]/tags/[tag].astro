@@ -27,13 +27,13 @@ export async function getStaticPaths() {
           tag,
         },
       }));
-    })
+    }),
   );
 
   // Handle default path (no lang)
   const defaultCategories = await getTaxonomy(
     default_language as keyof ContentEntryMap,
-    "tags"
+    "tags",
   );
   const defaultPaths = defaultCategories.map((tag) => ({
     params: {

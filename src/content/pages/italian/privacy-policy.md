@@ -17,12 +17,14 @@ CoMobility rispetta la tua privacy e si impegna a proteggerla attraverso la conf
 ## Informazioni che Raccogliamo
 
 ### Informazioni Personali
+
 - Nome e cognome
 - Indirizzo email
 - Numero di telefono
 - Informazioni di pagamento
 
 ### Dati di Utilizzo
+
 - Informazioni sui viaggi
 - Posizione GPS (solo durante l'uso dell'app)
 - Preferenze di viaggio
@@ -31,6 +33,7 @@ CoMobility rispetta la tua privacy e si impegna a proteggerla attraverso la conf
 ## Come Utilizziamo le Tue Informazioni
 
 Utilizziamo le informazioni raccolte per:
+
 - Fornire e mantenere il nostro servizio
 - Elaborare transazioni
 - Migliorare la sicurezza
@@ -40,6 +43,7 @@ Utilizziamo le informazioni raccolte per:
 ## Condivisione delle Informazioni
 
 Non vendiamo, scambiamo o trasferiamo le tue informazioni personali a terze parti senza il tuo consenso, eccetto:
+
 - Con partner di servizio fidati
 - Per conformarsi alle leggi applicabili
 - Per proteggere i nostri diritti
@@ -51,6 +55,7 @@ Implementiamo misure di sicurezza appropriate per proteggere le tue informazioni
 ## I Tuoi Diritti
 
 Hai il diritto di:
+
 - Accedere ai tuoi dati personali
 - Correggere informazioni inesatte
 - Richiedere la cancellazione dei dati

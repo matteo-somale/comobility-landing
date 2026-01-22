@@ -16,7 +16,7 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const contactIndex = await getListPage(
   "contact",
-  lang as keyof ContentEntryMap
+  lang as keyof ContentEntryMap,
 );
 if (contactIndex[0].data.draft) {
   return Astro.redirect("/404");

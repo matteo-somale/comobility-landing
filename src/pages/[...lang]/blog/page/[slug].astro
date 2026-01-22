@@ -21,19 +21,23 @@ if (!lang) {
 
 const postIndex: any = await getListPage(
   BLOG_FOLDER,
-  lang as keyof ContentEntryMap
+  lang as keyof ContentEntryMap,
 );
 if (postIndex[0].data.draft) {
   return Astro.redirect("/404");
 }
-const posts = await getSinglePage(BLOG_FOLDER, lang as keyof ContentEntryMap, "posts");
+const posts = await getSinglePage(
+  BLOG_FOLDER,
+  lang as keyof ContentEntryMap,
+  "posts",
+);
 const allCategories = await getAllTaxonomy(
   lang as keyof ContentEntryMap,
-  "categories"
+  "categories",
 );
 const categories = await getTaxonomy(
   lang as keyof ContentEntryMap,
-  "categories"
+  "categories",
 );
 const tags = await getTaxonomy(lang as keyof ContentEntryMap, "tags");
 const sortedPosts = sortByDate(posts);
@@ -50,7 +54,7 @@ export async function getStaticPaths() {
     supportedLang.map(async (lang) => {
       const posts = await getSinglePage(
         BLOG_FOLDER,
-        lang as keyof ContentEntryMap
+        lang as keyof ContentEntryMap,
       );
       const totalPages = Math.ceil(posts.length / config.settings.pagination);
       const langString = lang.toString();
@@ -66,7 +70,7 @@ export async function getStaticPaths() {
       }
 
       return langPaths;
-    })
+    }),
   );
 
   return paths.flat();

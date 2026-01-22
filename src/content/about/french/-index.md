@@ -1,7 +1,7 @@
 ---
-title: "Hé, je suis John Doe !"
+title: "About us"
 meta_title: "About"
-description: "this is meta description"
+description: "Comobility Project"
 image: "/images/avatar.png"
 draft: false
 ---

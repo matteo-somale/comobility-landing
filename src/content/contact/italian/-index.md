@@ -13,15 +13,18 @@ Siamo qui per aiutarti! Se hai domande, suggerimenti o vuoi saperne di più su C
 ## Come Raggiungerci
 
 ### Email
+
 - **Generale**: info@comobility.eu
 - **Supporto Tecnico**: support@comobility.eu
 - **Partnership**: partnership@comobility.eu
 
 ### Telefono
+
 - **Numero Verde**: 800 123 456
 - **Mobile**: +39 123 456 7890
 
 ### Indirizzo
+
 Via della Mobilità Sostenibile, 123  
 10125 Torino, Italia
 
@@ -43,15 +46,19 @@ Resta aggiornato sulle ultime novità di CoMobility:
 ## FAQ
 
 ### Come posso registrarmi sulla piattaforma?
+
 La registrazione è semplice e gratuita. Visita il nostro sito web e clicca su "Registrati" per iniziare.
 
 ### È sicuro condividere viaggi con sconosciuti?
+
 La sicurezza è la nostra priorità. Tutti gli utenti sono verificati e abbiamo sistemi di rating e recensioni per garantire esperienze positive.
 
 ### Quali aree sono coperte dal servizio?
+
 Attualmente operiamo nelle principali aree rurali del Piemonte, con piani di espansione in altre regioni italiane.
 
 ### Il servizio è gratuito?
+
 La registrazione è gratuita. Alcune funzionalità premium potrebbero prevedere piccole commissioni per mantenere la piattaforma.
 
 ## Modulo di Contatto
@@ -60,4 +67,4 @@ Per domande specifiche o richieste di supporto, utilizza il modulo di contatto s
 
 ---
 
-*Grazie per il tuo interesse in CoMobility. Insieme possiamo creare un futuro di mobilità più sostenibile!*
+_Grazie per il tuo interesse in CoMobility. Insieme possiamo creare un futuro di mobilità più sostenibile!_
