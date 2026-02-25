@@ -1,5 +1,6 @@
 ---
 import Logo from "@/components/Logo.astro";
+import ImageMod from "@/components/ImageMod.astro";
 import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import config from "@/config/config.json";
 import LanguageSwitcher from "@/helpers/LanguageSwitcher";
@@ -10,6 +11,22 @@ import {
 } from "@/lib/utils/languageParser";
 import type { ContentEntryMap } from "astro:content";
 import { IoSearch } from "react-icons/io5";
+
+const {
+  logo,
+  logo_darkmode,
+  logo_width,
+  logo_height,
+  logo_text,
+  title,
+}: {
+  logo: string;
+  logo_darkmode: string;
+  logo_width: any;
+  logo_height: any;
+  logo_text: string;
+  title: string;
+} = config.site;
 
 let lang = getLangFromUrl(Astro.url);
 const menu = await getTranslations(lang as keyof ContentEntryMap);
@@ -30,6 +47,16 @@ if (disabledLanguages.includes(lang)) {
     {/* logo */}
     <div class="order-0">
       <Logo />
+      <a href="" class="navbar-brand inline-block">
+        <ImageMod
+          src="/images/interreg-logo-alcotra-ita-fra.png"
+          class="inline-block"
+          width={logo_width.replace("px", "") * 1.2}
+          height={logo_height.replace("px", "") * 1.2}
+          alt="finanziato alcotra"
+          format="webp"
+        />
+      </a>
     </div>
     {/* navbar toggler */}
     <input id="nav-toggle" type="checkbox" class="hidden" />
