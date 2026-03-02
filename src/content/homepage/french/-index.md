@@ -1,9 +1,10 @@
 ---
 # Banner
 banner:
-  title: "Solutions de Mobilité Coopérative<br>et Durable"
+  title: "Solutions de Mobilité<br>Coopérative et Durable"
   content: "**CoMobility** promeut le **transport durable et multimodal** en **zones rurales** grâce à une plateforme facile à utiliser. Réservez des services de **covoiturage**, de **transport coopératif à la demande** géré par des bénévoles, et des **transports publics** en toute simplicité. Rejoignez-nous pour faire avancer la **mobilité zéro émission** vers un avenir plus vert."
   image: "/images/comobility-purple-long.svg"
+  alcotra_project: "Un projet de coopération <b>alcotra</b>"
   button:
     enable: false
     label: "Commencer gratuitement"
@@ -59,4 +60,25 @@ threebanner:
     - img: "/images/logo-inrete.png"
       title: "Inrete - Consortium Socio-Assistanciel"
       content: "Organisme public d’assistance sociale dans la région d’Ivrea (TO)"
+# Context Section
+context_section:
+  p1: "Les villes moyennes sont des pôles cruciaux pour les zones rurales. Cependant, les transports publics y sont souvent insuffisants et causent congestion, pollution, accidents et pertes économiques (seulement 4% des dépenses en carburant restent sur le territoire). Les personnes vulnérables en souffrent davantage, avec des difficultés d'accès aux biens, aux soins de santé et à l'emploi, favorisant le dépeuplement."
+  p2: "Le projet est développé en collaboration avec le Consortium de Services Sociaux IN.RE.TE. (Ivrea), l'ASL CN 2 - Hôpital de Verduno, Hautes-Alpes le Département en France. Le partenariat public-privé implique : MobiCoop.fr, expert en covoiturage et MobilitySquare, qui opère avec le modèle Transport COOP - Entreprise Sociale, déjà actif dans les Langhe avec l'Hôpital de Verduno."
+  p3: "Les objectifs : analyser les conditions économiques, sociales et légales pour le covoiturage en Italie et pour un modèle coopératif en France, créer une plateforme MaaS OpenSource intégrant les transports coopératifs, solidaires et publics."
+
+# Activities Section
+activities_section:
+  heading: "Activités, impacts et résultats :"
+  workpackages_intro: "Les activités du projet se divisent en :"
+  workpackages:
+    - "<b>- WP1 :</b> Gouvernance et gestion administrative du projet : avec contrôle de premier niveau et activités de coordination, réunions et reporting financier"
+    - "<b>- WP2 :</b> Communication : création de matériaux de communication, conférences et implication d'experts"
+    - "<b>- WP3 :</b> Étude de faisabilité et implication des parties prenantes : étude de l'état de l'art et de la réglementation et réunions/entretiens sur le terrain, avec un manuel (lignes directrices) comme résultat"
+    - "<b>- WP4 :</b> Plateforme Logicielle OpenSource MaaS : analyse des solutions logicielles existantes et définition des spécifications détaillées, transfert de compétences entre partenaires et développement de nouvelles fonctionnalités, localisation et démonstration."
+    - "<b>- WP5 :</b> Tests sur le terrain : activation des territoires, suivi et rapports, recrutement et formation de chauffeurs et location/achat de véhicules. Les principaux impacts attendus sont : avant tout une plus grande inclusion sociale et la lutte contre la \"Mobility Poverty\", mais aussi une plus grande cohésion communautaire et valorisation économique locale, ainsi que, conséquence naturelle, la réduction de la pollution et de la congestion."
+  results: "Les résultats seront une plateforme MaaS OpenSource fonctionnelle, avec des services pilotes opérationnels, ainsi que des modèles légaux et organisationnels définis pour l'Italie et la France. Le principal résultat souhaitable est la réplicabilité du projet sur d'autres territoires."
+  budget:
+    col_total: "Budget total"
+    col_feder: "Budget FEDER"
+    col_counterpart: "Contreparties"
 ---

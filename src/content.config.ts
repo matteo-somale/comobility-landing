@@ -74,6 +74,7 @@ const homepageCollection = defineCollection({
       title: z.string(),
       content: z.string(),
       image: z.string(),
+      alcotra_project: z.string(),
       button: z.object({
         enable: z.boolean(),
         label: z.string(),
@@ -103,6 +104,27 @@ const homepageCollection = defineCollection({
             content: z.string(),
           }),
         ),
+      })
+      .optional(),
+    context_section: z
+      .object({
+        p1: z.string(),
+        p2: z.string(),
+        p3: z.string(),
+      })
+      .optional(),
+   
+    activities_section: z
+      .object({
+        heading: z.string(),
+        workpackages_intro: z.string(),
+        workpackages: z.array(z.string()),
+        results: z.string(),
+        budget: z.object({
+          col_total: z.string(),
+          col_feder: z.string(),
+          col_counterpart: z.string(),
+        }),
       })
       .optional(),
   }),

@@ -23,6 +23,8 @@ const homepage = await getListPage("homepage", lang as keyof ContentEntryMap);
 const { banner, features } = homepage[0].data;
 const allData = homepage[0].data as any;
 const threebanner = allData.threebanner || allData.Threebanner || null;
+const context_section = allData.context_section || null;
+const activities_section = allData.activities_section || null;
 
 const testimonial = await getSinglePage(
   "testimonialSection",
@@ -87,77 +89,37 @@ const call_to_action = await getSinglePage(
             format="webp"
           />
         </div>
-        <p class="text-center">Un progetto di cooperazione <b>alcotra</b></p>
+        {banner.alcotra_project && (
+        <p class="text-center" set:html={banner.alcotra_project}/>
+        )}
       </div>
     </div>
   </section>
   <!-- /Banner -->
 
-  <section class="section-sm" style="background-color: #165021 ;">
-    <div class="container">
-      <div class="items-center">
-        <h6 class="text-white font-thin">
-          Le città medie sono poli cruciali per le aree rurali. Tuttavia, qui il
-          trasporto pubblico è spesso insufficiente e causa congestione,
-          inquinamento, incidenti e perdita economica (solo il 4% della spesa
-          per carburante resta sul territorio). Le fasce vulnerabili ne
-          risentono maggiormente, con difficoltà di accesso a beni, sanità e
-          lavoro, favorendo lo spopolamento.
-        </h6>
-        <h6 class="text-white pt-2 font-thin">
-          Il progetto è sviluppato in collaborazione con il Consorzio Servizi
-          Sociali IN.RE.TE. (Ivrea), l'ASL CN 2 - Ospedale di Verduno,
-          Hautes-Alpes le Département in Francia. <br />La partnership
-          pubblico-privata coinvolge: MobiCoop.fr, esperta di carpooling e
-          MobilitySquare, che opera con il modello Trasporto COOP - Impresa
-          Sociale, già attivo nelle Langhe con l'Ospedale di Verduno.
-        </h6>
-        <h6 class="text-white pt-2">
-          Gli obiettivi: analizzare condizioni economiche, sociali e legali per
-          il carpooling in Italia e per un modello cooperativo in Francia,
-          creare una piattaforma MaaS OpenSource che integri trasporti
-          cooperativi, solidali e pubblici.
-        </h6>
+  {context_section && (
+    <section class="section-sm" style="background-color: #165021;">
+      <div class="container">
+        <div class="items-center">
+          <h6 class="text-white font-thin" set:html={context_section.p1} />
+          <h6 class="text-white pt-2 font-thin" set:html={context_section.p2} />
+          <h6 class="text-white pt-2" set:html={context_section.p3} />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
 
   <section class="section-sm">
+    {activities_section && (
     <div class="container">
       <div class="row items-center justify-between">
           <div class="flex flex-col lg:flex-row gap-8 w-full">
             <div class="flex-1">
-              <h2 class="mb-4">Attività, impatti e risultati:</h2>
+              <h2 class="mb-4">{activities_section.heading}</h2>
               <div class="mb-8 text-lg">
-                <h5 class="">Le attività del progetto si dividono in: <br /></h5>
-                <p>
-                  <b>- WP1:</b> Governance e gestione amministrativa del progetto: con
-                  controllo di primo livello e attività di coordinamento, riunioni e financial
-                  reporting <br />
-                  <b>- WP2:</b> Comunicazione: creazione di materiali di comunicazione,
-                  conferenze e coinvolgimento esperti <br />
-                  <b>- WP3:</b> Studio di fattibilità e coinvolgimento stakeholders: studio
-                  dello stato dell’arte e della normativa e riunioni/interviste sul campo,
-                  con un manuale (linee guida) come output <br />
-                  <b>- WP4:</b> Software Platform Opensource Maas: analisi delle soluzioni
-                  software esitendi e definizione delle specifiche di dettaglio, trasferimento
-                  delle competenze tra i partner e sviluppo di nuove features, localizzazione
-                  e demo. <br />
-                  <b>- WP5:</b> Test sul campo: attivazione dei territori, monitoraggio
-                  e reportistica e assunzione e formazione di autisti e noleggio/acquisto
-                  furgoni. I principali impatti che ci aspettiamo di ottenere con il nostro
-                  progetto sono: in primo luogo una maggiore inclusione sociale e il contrasto
-                  alla “Mobility Poverty”, ma anche maggiore coesione comunitaria e valorizzazione
-                  economica locale, oltre che,c ome naturale conseguenza, la riduzione
-                  dell’inquinamento e della congestione.
-                </p>
-                <p>
-                  I risultati saranno una piattaforma MaaS OpenSource funzionante,
-                  con servizi pilota operativi , oltre che modelli legali e
-                  organizzativi definiti sia per l’Italia, sia per la Francia. Il
-                  principale risultato auspicabile è la replicabilità del progetto
-                  su altri territori.
-                </p>
+                <h5 set:html={activities_section.workpackages_intro}/>
+                <p set:html={activities_section.workpackages.join('<br />')} />
+                <p set:html={activities_section.results} />
               </div>
             </div>
             <div class="w-full lg:w-2/5 xl:w-1/3">
@@ -166,9 +128,9 @@ const call_to_action = await getSinglePage(
                   <thead>
                     <tr class="bg-gray-800 text-white">
                       <th class="border border-gray-300 p-3"></th>
-                      <th class="border border-gray-300 p-3">Budget totale</th>
-                      <th class="border border-gray-300 p-3">Budget FEDER</th>
-                      <th class="border border-gray-300 p-3">Controparite</th>
+                      <th class="border border-gray-300 p-3" set:html={activities_section.budget.col_total} />
+                      <th class="border border-gray-300 p-3" set:html={activities_section.budget.col_feder} />
+                      <th class="border border-gray-300 p-3" set:html={activities_section.budget.col_counterpart} />
                     </tr>
                   </thead>
                   <tbody>
@@ -197,7 +159,7 @@ const call_to_action = await getSinglePage(
           </div>
         </div>
       </div>
-    </div>
+      )}
 
     <!-- Features -->
     {

@@ -4,6 +4,7 @@ banner:
   title: "Cooperative Sustainable<br>Mobility Solutions"
   content: "**CoMobility** promotes **multimodal sustainable transport** in **rural areas** through an easy-to-use platform. Book **carpooling**, **volunteer-run**, **on-demand cooperative**, and **public transport** services seamlessly. Join us in advancing **zero-emission mobility** for a greener future."
   image: "/images/comobility-purple-long.svg"
+  alcotra_project: "An <b>alcotra</b> cooperation project"
   button:
     enable: false
     label: "Get Started For Free"
@@ -59,4 +60,26 @@ threebanner:
     - img: "/images/logo-inrete.png"
       title: "Inrete - Social Assistance Consortium"
       content: "Social Assistance Public Body in the Area of Ivrea (TO)"
+
+# Context Section
+context_section:
+  p1: "Medium-sized cities are crucial hubs for rural areas. However, public transport here is often insufficient and causes congestion, pollution, accidents, and economic losses (only 4% of fuel spending remains in the territory). Vulnerable groups are most affected, with difficulties accessing goods, healthcare, and employment, encouraging depopulation."
+  p2: "The project is developed in collaboration with the Social Services Consortium IN.RE.TE. (Ivrea), ASL CN 2 - Verduno Hospital, Hautes-Alpes le Département in France. The public-private partnership involves: MobiCoop.fr, expert in carpooling, and MobilitySquare, which operates with the Transport COOP - Social Enterprise model, already active in the Langhe area with Verduno Hospital."
+  p3: "The objectives: to analyze economic, social and legal conditions for carpooling in Italy and for a cooperative model in France, to create an OpenSource MaaS platform that integrates cooperative, solidarity-based and public transport."
+
+# Activities Section
+activities_section:
+  heading: "Activities, Impacts and Results:"
+  workpackages_intro: "The project activities are divided into:"
+  workpackages:
+    - "<b>- WP1:</b> Governance and administrative project management: with first-level control and coordination activities, meetings and financial reporting"
+    - "<b>- WP2:</b> Communication: creation of communication materials, conferences and expert involvement"
+    - "<b>- WP3:</b> Feasibility study and stakeholder engagement: study of the state of the art and regulations, field meetings/interviews, with a manual (guidelines) as output"
+    - "<b>- WP4:</b> OpenSource MaaS Software Platform: analysis of existing software solutions and definition of detailed specifications, knowledge transfer between partners and development of new features, localization and demo."
+    - "<b>- WP5:</b> Field testing: territory activation, monitoring and reporting, hiring and training drivers, and vehicle rental/purchase. The main impacts expected from our project are: first and foremost greater social inclusion and combating \"Mobility Poverty\", but also greater community cohesion and local economic development, as well as, as a natural consequence, reduction of pollution and congestion."
+  results: "The results will be a functioning OpenSource MaaS platform with operational pilot services, as well as legally and organizationally defined models for both Italy and France. The main desirable outcome is the replicability of the project in other territories."
+  budget:
+    col_total: "Total Budget"
+    col_feder: "ERDF Budget"
+    col_counterpart: "Counterpart"
 ---
